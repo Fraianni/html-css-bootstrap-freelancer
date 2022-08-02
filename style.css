@@ -21,3 +21,7 @@
 
 
 /*** content ***/
+
+.fi-avatar-width {
+    max-width: 250px;
+}
