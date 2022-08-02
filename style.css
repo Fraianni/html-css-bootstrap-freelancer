@@ -41,3 +41,8 @@
 .fi-avatar-width {
     max-width: 250px;
 }
+
+#email-container {
+    height: 0;
+
+}
