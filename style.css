@@ -18,6 +18,22 @@
     color: #1abc9c
 }
 
+.fi-star::before,
+.fi-star::after {
+    content: "";
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 1px;
+    width: 15%;
+    vertical-align: middle;
+
+}
+
+.fi-black-star.fi-star::before,
+.fi-black-star.fi-star::after {
+    border: 1px solid black;
+}
+
 
 
 /*** content ***/

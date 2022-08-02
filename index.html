@@ -54,7 +54,12 @@
                     <div class="col-12">
                         <h2>Start Boostrap</h2>
                     </div>
-                    <div class="col-12"><i class="bi bi-star-fill"></i></div>
+                    <div class="col-12">
+                        <div class="fi-star my-5">
+                            <i class="bi bi-star-fill align-middle"></i>
+
+                        </div>
+                    </div>
                     <p>testo</p>
                 </div>
             </div>
@@ -67,36 +72,34 @@
                         <h2>Portfolio</h2>
                     </div>
                     <div class="col-12">
-                        <i class="bi bi-star-fill"></i>
+                        <div class="fi-star fi-black-star my-5 ">
+                            <i class="bi bi-star-fill align-middle"></i>
+
+                        </div>
                     </div>
                 </div>
 
                 <div id="portfolio-container">
                     <div class="row gy-2">
-                        <div class="col-12 col-lg-6">
-                            <img src="https://i.picsum.photos/id/222/200/300.jpg?hmac=owJZdOfXwkUqJHbR-MjF56GoNKbFIp3qGeGkkBS3Ei0"
-                                class="img-thumbnail" alt="...">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <img class="img-fluid rounded-4" src="bootstrap_freelancer/img/cake.png" alt="...">
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="https://i.picsum.photos/id/222/200/300.jpg?hmac=owJZdOfXwkUqJHbR-MjF56GoNKbFIp3qGeGkkBS3Ei0"
-                                class="img-thumbnail" alt="...">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <img class="img-fluid rounded-4" src="bootstrap_freelancer/img/circus.png" alt="...">
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="https://i.picsum.photos/id/222/200/300.jpg?hmac=owJZdOfXwkUqJHbR-MjF56GoNKbFIp3qGeGkkBS3Ei0"
-                                class="img-thumbnail" alt="...">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <img class="img-fluid rounded-4" src="bootstrap_freelancer/img/game.png" alt="...">
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="https://i.picsum.photos/id/222/200/300.jpg?hmac=owJZdOfXwkUqJHbR-MjF56GoNKbFIp3qGeGkkBS3Ei0"
-                                class="img-thumbnail" alt="...">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <img class="img-fluid rounded-4" src="bootstrap_freelancer/img/safe.png" alt="...">
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="https://i.picsum.photos/id/222/200/300.jpg?hmac=owJZdOfXwkUqJHbR-MjF56GoNKbFIp3qGeGkkBS3Ei0"
-                                class="img-thumbnail" alt="...">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <img class="img-fluid rounded-4" src="bootstrap_freelancer/img/cabin.png" alt="...">
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="https://i.picsum.photos/id/222/200/300.jpg?hmac=owJZdOfXwkUqJHbR-MjF56GoNKbFIp3qGeGkkBS3Ei0"
-                                class="img-thumbnail" alt="...">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <img class="img-fluid rounded-4" src="bootstrap_freelancer/img/submarine.png" alt="...">
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -109,7 +112,10 @@
                         <h2>About</h2>
                     </div>
                     <div class="col-12">
-                        <i class="bi bi-star-fill"></i>
+                        <div class="fi-star my-5">
+                            <i class="bi bi-star-fill align-middle"></i>
+
+                        </div>
                     </div>
                 </div>
 
@@ -142,13 +148,45 @@
                 <div class="row text-center">
                     <div class="col-12">
                         <h2>Contact me</h2>
-                        <div class="fi-star">
-                            <i class="bi bi-star-fill"></i>
+                        <div class="fi-star my-5 fi-black-star">
+                            <i class="bi bi-star-fill align-middle"></i>
                         </div>
                     </div>
                 </div>
+                <form method="GET" action="#">
+                    <div class="mb-3">
+                        <label for="input-name" class="form-label"> Name </label>
+                        <input type="text" class="form-control" id="input-name" name="user-name"
+                            placeholder="inserisci il tuo nome" value="Anonimo" />
+                    </div>
 
-                <form action=""></form>
+                    <div class="mb-3 form-floating">
+                        <input required name="user-email" type="email" class="form-control is-invalid" id="input-email"
+                            aria-describedby="emailHelp" />
+                        <label for="input-email"> Email address </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="input-telephone" class="form-label">
+                            Phone number
+                        </label>
+                        <input required name="user-phone" type="number" minlength="9" class="form-control"
+                            id="input-telephone" aria-describedby="phoneHelp" />
+                        <div id="phoneHelp" class="form-text invisible">
+                            We'll never share your phone number with anyone else.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="input-message" class="form-label">
+                            Message
+                        </label>
+                        <textarea class="form-control" name="user-message" id="input-message" cols="30"
+                            rows="8"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn ac-bg-green">Send</button>
+                </form>
 
             </div>
         </section>
@@ -188,7 +226,7 @@
                 </div>
             </div>
         </section>
-        <div class="row ac-bg-dark">
+        <div class="row ac-bg-dark py-2">
             <div class="col-12">
                 <p>Copyright @ aksdka os ao</p>
             </div>
